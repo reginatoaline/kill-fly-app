@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kill Fly</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="app.js"></script>
+</head>
+<body onresize="fixScreenSize()">
+
+    <div class="panel">
+        <div class="lifes">
+            <img id="l1" src="img/full.png" alt="">
+            <img id="l2" src="img/full.png" alt="">
+            <img id="l3" src="img/full.png" alt="">
+
+        </div>
+        <div class="stopwatch">
+            Stopwatch: <span id="stopwatch"></span>
+
+        </div>
+
+        
+    </div>
+
+
+    <script>
+
+        document.getElementById('stopwatch').innerHTML = time;
+
+        var setFly = setInterval(function() {
+            ramdomPosition()
+        }, setFlyTime)
+    </script>
+
+    
+</body>
+</html>
